@@ -15,7 +15,7 @@ init
 update
 {
     // Splits when the score is updated after level completion
-    if (current.updater >= old.updater + 100)
+    if ((current.updater >= old.updater + 100) && (current.updater < old.updater + 200))
     {
         vars.trigger = true;
     }
